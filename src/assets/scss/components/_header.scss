@@ -1,123 +1,137 @@
 .lok-header {
   display: flex;
 
-
   &__block {
+    display: flex;
     background-color:#6c6c6c;
     width: 50%;
     transition: .25 ease-in;
-    display: flex;
-    align-items: flex-end;
     overflow: hidden;
     position: relative;
-
 
     &.block-left {
       justify-content: flex-end;
 
       .blocks {
-        width: 40%;
-        background-color: #9d9d9d;
-        position: absolute;
-        bottom: -24%;
         text-align: right;
-        padding: 1rem;
-        transition: .25s ease-in;
+        right: -100%;
+      }
+    }
 
+    &.block-right {
+      justify-content: flex-end;
 
-        &__text {
-          background-color: #7f7f7f;
-          display: block;
-          margin-top: 10px;
-          padding: 5px;
-        }
-
-        &__info {
-          width: 100%;
-          background-color: #cbcbcb;
-          text-align: left;
-          padding: 5px;
-          line-height: 1.5em;
-          margin-top: 10px;
-        }
-
-        &__btn {
-          width: 100%;
-          height: 20%;
-          text-align: center;
-          padding: 10px;
-          background-color: #7f7f7f;
-          margin-top: 10px;
-          cursor: pointer;
-        }
-
-        &__btn span {
-          background: #b2b2b2;
-          padding: 0 20px;
-        }
-
-
-        &:hover {
-          bottom: 0;
-          transition: .25s ease-in;
-        }
+      .blocks {
+        left: -100%;
       }
     }
 
     &.block-right {
       justify-content: flex-start;
-
-      .blocks {
-        width: 40%;
-        background-color: #9d9d9d;
-        position: absolute;
-        bottom: -24%;
-        text-align: left;
-        padding: 1rem;
-        transition: .25s ease-in;
-
-
-        &__text {
-          background-color: #7f7f7f;
-          display: block;
-          margin-top: 10px;
-          padding: 5px;
-        }
-
-        &__info {
-          width: 100%;
-          background-color: #cbcbcb;
-          text-align: left;
-          padding: 5px;
-          line-height: 1.5em;
-          margin-top: 10px;
-        }
-
-        &__btn {
-          width: 100%;
-          height: 20%;
-          text-align: center;
-          padding: 10px;
-          background-color: #7f7f7f;
-          margin-top: 10px;
-          cursor: pointer;
-        }
-
-        &__btn span {
-          background: #b2b2b2;
-          padding: 0 20px;
-        }
-
-
-        &:hover {
-          bottom: 0;
-          transition: .25s ease-in;
-        }
-      }
     }
 
+  }
+}
 
 
+.blocks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: auto;
+  width: 40%;
+  height: 100%;
+  background-color: #9d9d9d;
+  position: absolute;
+  padding: 1rem;
+
+  transition: .5s ease-out;
+
+  &__header {
+    display: block;
+    color: $black;
+    font-size: 2.4em;
+    font-weight: $bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 0.4em;
   }
 
+  &__description {
+    color: $black;
+    font-size: 1.2em;
+    font-weight: $bold;
+    line-height: 1.2;
+    text-align: justify;
+  }
+
+  &__btn-desc {
+    background-color: $white;
+    margin: 0;
+    padding: 0.8em  1em;
+    text-align: justify;
+    line-height: 1.2;
+  }
+
+  &__btn, {
+    font-weight: $bold;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    padding: 0.6em;
+    margin-bottom: 0.6em;
+    color: $white;
+    background-color: $dark-gray;
+    transition: .25s ease-in;
+
+    &:hover {
+      color: $white;
+      background-color: $medium-gray;
+      transition: .25s ease-out;
+    }
+  }
+
+  &__btn-phone {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: $white;
+    background-color: $dark-gray;
+    text-transform: uppercase;
+
+    &>span {
+      text-align: center;
+      width: 100%;
+      padding: 0.6em;
+      font-weight: $bold;
+    }
+
+    &>i {
+      padding: 0.6em;
+      font-size: 1.24em;
+      color: $dark-gray;
+      background-color: $white;
+    }
+
+    &:hover {
+      color: $white;
+      background-color: $medium-gray;
+      transition: .25s ease-out;
+    }
+  }
+
+  .block-left:hover & {
+    right: 0;
+    transition: .3s ease-in;
+  }
+
+  .block-left:hover & {
+    right: 0;
+    transition: .3s ease-in;
+  }
+
+  .block-right:hover & {
+    left: 0;
+    transition: .3s ease-in;
+  }
 }

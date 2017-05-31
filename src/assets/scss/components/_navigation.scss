@@ -29,10 +29,34 @@
   .navigation__items {
     list-style-type: none;
     height: 100%;
+    position: relative;
 
     &:last-child{
-      background-color: #989898;
+      background-color:darken($nav-bg-color,10%);
+
+      &:hover .contacts {
+        opacity: 1;
+        right: 0;
+        transition: .25s liner;
+        display: block;
+      }
     }
+
+    &:nth-child(2):hover .contacts {
+      opacity: 1;
+      right: 0;
+      transition: .25s liner;
+      display: block;
+    }
+
+    &:nth-child(3):hover .contacts {
+      opacity: 1;
+      right: 0;
+      transition: .25s liner;
+      display: block;
+    }
+
+
     .item {
       display: flex;
       align-items: center;
@@ -40,9 +64,11 @@
       padding: 0 1em;
       color: #919191;
 
+
       &:hover {
         background-color:darken($nav-bg-color,10%);
       }
+
       i {
         display: block;
 
@@ -52,5 +78,35 @@
         }
       }
     }
+  }
+
+  .contacts {
+    display: none;
+    position: absolute;
+    right: 9999px;
+    opacity: 0;
+    z-index: 10000;
+    transition: .25s liner;
+    width: 100%;
+    background-color: #656565;
+    list-style-type: none;
+    margin:0;
+    text-align: left;
+
+    &__item {
+      padding: 1rem;
+      background-color: #989898;
+      display: block;
+      flex-direction: column;
+      align-items: center;
+      list-style-type: none;
+      background-color: #656565;
+    }
+
+    &__item.item {
+      padding: 1em;
+      align-items: flex-start;
+    }
+
   }
 }

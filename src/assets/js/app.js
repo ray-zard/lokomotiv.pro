@@ -4,4 +4,5 @@ $(document).ready(function() {
 
   var heightNavbar = +($('.lok-navbar').height());
   $('body').find('.lok-header').css('height', ('calc(100vh - ' + heightNavbar + 'px)' ));
+
 });

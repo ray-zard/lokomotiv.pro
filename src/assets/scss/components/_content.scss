@@ -1,0 +1,62 @@
+.lok-content {
+  margin-bottom: 3rem;
+  padding: 1rem;
+  flex-direction: column;
+
+  .columns {
+    padding: 0;
+  }
+
+  &__title {
+    border-bottom: 2px solid #cbcbcb;
+    margin-bottom: 2rem;
+    h2 {
+      padding: .8rem;
+    }
+  }
+
+  &__description {
+    margin-bottom: 2rem;
+  }
+}
+
+  &__products {
+
+}
+    .product {
+      display: flex;
+      flex-direction: row;
+      height: 150px;
+      background-color:#E6E6E6;
+      margin-bottom: 1rem;
+      align-items: center;
+      justify-content: center;
+
+      .picture {
+        background-color: #B3B3B3;
+        height: 150px;
+      }
+
+      .description {
+        padding: 1rem;
+        h4 {
+          font-size: 24px;
+        }
+        .span {
+          font-size: 14px;
+          padding: .5rem;
+        }
+
+      }
+      .more-products {
+        background-color: #CCCCCC;
+        padding: 1.9rem;
+        margin-right: 5px;
+      }
+
+      .price {
+        background-color: #B3B3B3;
+        height: 100%;
+        color: #CCCCCC;
+      }
+    }

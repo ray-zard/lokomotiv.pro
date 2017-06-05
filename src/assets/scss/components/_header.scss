@@ -1,5 +1,6 @@
 .lok-header {
   display: flex;
+  margin-bottom: 3rem;
 
   &__block {
     display: flex;
@@ -103,7 +104,6 @@
 
   &__btn, &__btn-phone {
     color: $white;
-    background-color: $dark-gray;
     text-transform: uppercase;
 
     &:focus {
@@ -118,10 +118,11 @@
     padding: 0.6em;
     margin-bottom: 0.6em;
     transition: .25s ease-in;
+    background-color: $main-color;
 
     &:hover {
       color: $white;
-      background-color: $medium-gray;
+      background-color: $main-color-activ;
       transition: .25s ease-out;
     }
   }
@@ -130,6 +131,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    background-color: $main-black-color;
 
     &>span {
       text-align: center;
@@ -141,13 +143,13 @@
     &>i {
       padding: 0.6em;
       font-size: 1.24em;
-      color: $dark-gray;
-      background-color: $white;
+      color: $main-black-color;
+      background-color: $main-color;
     }
 
     &:hover {
       color: $white;
-      background-color: $medium-gray;
+      background-color: $main-dark-color;
       transition: .25s ease-out;
     }
   }

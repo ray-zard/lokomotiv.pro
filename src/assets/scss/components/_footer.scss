@@ -1,21 +1,13 @@
 .lok-footer {
+  background-color: $main-color;
   width: 100%;
-  background-color: #7f7f7f;
-  display: flex;
-  justify-content: center;
 }
 
-.lok-map {
-  width: 45%;
+#map {
   background-color: #989898;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .lok-addres {
-  width: 35%;
   background-color: #656565;
   padding: 1rem;
   color: #cbcbcb;
@@ -24,16 +16,32 @@
     display: flex;
     flex-direction: column;
   }
+
   & span {
     width: 100%;
     background-color: #cbcbcb;
-    margin-bottom: 1rem;
-    color:  #7e7e7e;
-    padding: 0.3em;
+    margin-bottom: 0.5rem;
+    color: #7e7e7e;
+    padding: 0.2em;
   }
 
   & b {
     color: #cbcbcb;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.under-footer {
+  background-color: $main-black-color;
+  justify-content: center;
+
+  &__text {
+    padding: 0.5rem;
+    text-align: center;
+    color: $main-color;
+  }
+
+  small {
+    color: $dark-gray;
   }
 }

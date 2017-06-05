@@ -1,0 +1,105 @@
+.lok-tables {
+  flex-direction: column;
+  transition: .1s ease-in;
+
+  a {
+    color: #E6E6E6;
+  }
+
+  &__content {
+    margin: 1rem auto;
+
+    h2 {
+      border-bottom: 2px solid $main-color;
+    }
+
+
+    .lok-table {
+      margin: 2rem 0;
+      padding: 2rem 0;
+
+      &__title {
+        padding: 1rem 0;
+        color: $main-dark-color;
+      }
+
+      .columns {
+        padding: 0;
+      }
+
+      &__discription{
+        font-size: 18px;
+        margin-bottom: 3rem;
+      }
+
+      .lok-some-table{
+        position: relative;
+        margin-bottom: 6rem;
+      }
+
+      table {
+        border-collapse: collapse;
+        background-color: #E6E6E6;
+        padding: 0;
+
+
+
+
+        .name-table {
+          background-color: #CCCCCC;
+        }
+      }
+
+      ul {
+        margin: 0;
+      }
+
+      li {
+        list-style-type: none;
+        display: inline;
+        padding: .4rem .7rem;
+        background-color: $main-color;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $main-color-activ;
+        }
+
+      }
+
+       tr td {
+        width: 1%;
+        border: 7px solid white;
+        padding: 1rem;
+      }
+
+      tr:first-child {
+        background-color: $main-black-color;
+        color: $main-medium-color;
+        text-transform: uppercase;
+      }
+
+      td:first-child {
+        text-transform: uppercase;
+
+      }
+    }
+
+    .btn-table {
+      margin: 0;
+      width: 10%;
+      background-color: #B3B3B3;
+      text-align: center;
+      padding: 0.5rem;
+      position: absolute;
+      right: 0;
+      border: 1px solid black;
+      border-top: 0;
+
+      &:hover {
+        background-color:darken(#B3B3B3,10%);
+        transition: .1s ease-in;
+      }
+    }
+  }
+}

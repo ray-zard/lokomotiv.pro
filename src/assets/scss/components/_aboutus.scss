@@ -1,0 +1,124 @@
+.lok-about-us {
+  margin-bottom: 3rem;
+  color: #666666;
+
+  h2 {
+    border-bottom: 2px solid $main-color;
+    margin-bottom: 3rem;
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+  }
+
+  &__contant {
+    margin-bottom: 3rem;
+
+    span {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__blocks {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+
+    .block-info {
+      transition: .1s ease-in;
+
+      a {
+        color: #808080;
+      }
+
+      .img {
+        height: 200px;
+        background-color: #999999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .title-block {
+        font-size: 24px;
+        background-color: $main-black-color;
+        padding: 1rem;
+        color: #ffffff;
+      }
+
+      .sub-title {
+        position: relative;
+        font-size: 16px;
+        padding: 1rem;
+        background-color: $main-medium-color;
+        color: $main-black-color;
+
+        &:before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          width: 90%;
+          height: 1px;
+          background-color: $main-dark-color;
+          z-index: 100000;
+          margin: 0 auto;
+        }
+      }
+
+      .product-list {
+        align-items: flex-start;
+        justify-content: flex-start;
+        background-color: $main-medium-color;
+        transition: .25s ease-in;
+
+
+        ul {
+          display: flex;
+          flex-direction: row;
+          list-style-type: none;
+          margin: 0;
+
+
+          li {
+            margin: 1rem .5rem;
+            padding: 0.1rem .4rem;
+            background-color: $main-color;
+            color: $main-light-color;
+
+            &:hover {
+              background-color: $main-color-activ;
+              transition: .25s ease-in;
+              text-decoration: underline;
+            }
+          }
+
+        }
+
+      }
+      .btn-shirt {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+      }
+      .btn {
+        width: 100%;
+        padding: .6rem 3rem;
+        background-color: $main-black-color;
+        text-align: center;
+        color: $main-light-color;
+
+        &:hover {
+          background-color:darken(#B3B3B3,10%);
+          transition: .1s ease-in;
+        }
+      }
+    }
+  }
+
+
+}

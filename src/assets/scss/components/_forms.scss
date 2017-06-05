@@ -1,0 +1,28 @@
+.lok-forms {
+  margin-bottom: 3rem;
+  h2 {
+    border-bottom: 2px solid $main-color;
+    margin-bottom: 3rem;
+  }
+
+  &__discription{
+
+    span {
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding: 3rem;
+      list-style-type: none;
+    }
+  }
+
+  &__form {
+    background-color: $main-light-color;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    }
+  }
+}

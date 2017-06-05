@@ -1,0 +1,29 @@
+.lok-clients {
+  margin-bottom: 3rem;
+  h2 {
+    border-bottom: 2px solid $main-color;
+    margin-bottom: 3rem;
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+  }
+
+  &__discription {
+    font-size: 18px;
+    margin-bottom: 3rem;
+  }
+
+  &__blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 3rem;
+
+  .block {
+    background-color: #999999;
+    margin-left: 2rem;
+    height: 10rem;
+    }
+  }
+}

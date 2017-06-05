@@ -1,21 +1,52 @@
-<footer class = "lok-footer">
-<div class="lok-map">
-  <i class="fa fa-map fa-2x" aria-hidden="true"></i>
-</div>
-<div class="lok-addres">
-  <h3>Контакты</h3>
-  <div class="lok-addres__item">
-    <b>Адресс:</b>
-    <span>426011, Удмуртская Республика</span>
-    <span>г. Ижевск, ул. Майская, д.8, оф.39</span>
-    <b>Приемная:</b>
-    <span>+7 (3412) 77-66-31</span>
-    <b>Бухгалтерия:</b>
-    <span>+7 (3412) 77-56-05</span>
-    <b>Юридический отдел:</b>
-    <span>+7 (3412) 77-67-25</span>
-    <b>E-mail:</b>
-    <span>office@lider-group.pro</span>
+<footer class="lok-footer">
+  <div class="row">
+    <div id="map" class="small-12 medium-8 columns">
+      <script>
+        var map;
+
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: {
+              lat: 56.868747,
+              lng: 53.212021
+            },
+            gestureHandling: 'auto',
+            zoom: 16,
+
+          });
+
+          var companyPos = new google.maps.LatLng(56.868747, 53.212021);
+          var companyMarker = new google.maps.Marker({
+            position: companyPos,
+            map: map,
+            title: "Lokomotiv.pro",
+          });
+        }
+      </script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDsxwzXbvFyk7Fu0oLr5cESMamRhI1GiE&callback=initMap">
+      </script>
+    </div>
+    <div class="lok-addres small-12 medium-4 columns">
+      <h3>Контакты</h3>
+      <div class="lok-addres__item">
+        <b>Адресс:</b>
+        <span>426011, Удмуртская Республика</span>
+        <span>г. Ижевск, ул. Майская, д.8, оф.39</span>
+        <b>Приемная:</b>
+        <span>+7 (3412) 77-66-31</span>
+        <b>Бухгалтерия:</b>
+        <span>+7 (3412) 77-56-05</span>
+        <b>Юридический отдел:</b>
+        <span>+7 (3412) 77-67-25</span>
+        <b>E-mail:</b>
+        <span>office@lider-group.pro</span>
+      </div>
+    </div>
   </div>
+
 </div>
+<div class="under-footer">
+  <div class="under-footer__text">
+    <span><small>Copyright © </small>Локомотив.pro 2017 <small>Все права защищены</small></span>
+  </div>
 </footer>

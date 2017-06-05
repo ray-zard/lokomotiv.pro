@@ -1,0 +1,50 @@
+.lok-sub-header{
+
+
+  .column, .columns {
+    padding: 0;
+  }
+
+  &__main-block {
+    background-color: #E6E6E6;
+
+    .description-block {
+      background-color: #999999;
+      padding: .5rem;
+
+      h2 {
+        padding: .8rem;
+      }
+
+      .text {
+        padding: .8rem;
+      }
+
+      .content {
+        background-color: #CCCCCC;
+        padding: 1rem;
+
+        span {
+          display: block;
+          margin-bottom: .5rem;
+        }
+
+      }
+      .content-btn {
+        background-color: #B3B3B3;
+        text-align: center;
+        padding: 1rem;
+        margin-bottom: .5rem;
+        color: #808080;
+      }
+
+      .btn {
+        text-align: center;
+        padding: 1rem;
+        background-color: #808080;
+        color: #B3B3B3;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
